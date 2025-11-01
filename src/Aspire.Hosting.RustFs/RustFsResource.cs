@@ -24,6 +24,6 @@ public sealed class RustFsResource(string name, ParameterResource accessKey, Par
     internal const int ConsoleTargetPort = 9001;
 
     internal ParameterResource AccessKey { get; } = accessKey;
-    
+
     internal ParameterResource SecretKey { get; } = secretKey;
 }
