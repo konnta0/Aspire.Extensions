@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="examples\Examples.AppHost\Examples.AppHost.csproj" Type="Classic C#" />
+  <Project Path="src/Aspire.Hosting.RustFs/Aspire.Hosting.RustFs.csproj" />
+</Solution>

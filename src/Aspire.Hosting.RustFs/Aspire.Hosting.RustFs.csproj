@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Aspire.Hosting.RustFs</RootNamespace>
+        <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+        <PackageTags>aspire;rustfs;storage;s3-compatible</PackageTags>
+        <PackageId>AspireIntegration.Hosting.RustFs</PackageId>
+        <AssemblyName>AspireIntegration.Hosting.RustFs</AssemblyName>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+        <!-- NuGet Package Metadata -->
+        <Version>0.1.0</Version>
+        <Authors>konnta0</Authors>
+        <Description>Aspire hosting integration for RustFs - A lightweight S3-compatible object storage server written in Rust</Description>
+        <PackageProjectUrl>https://github.com/konnta0/Aspire.Extensions</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/konnta0/Aspire.Extensions</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting" />
+        <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+</Project>

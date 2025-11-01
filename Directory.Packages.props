@@ -1,0 +1,12 @@
+<Project>
+    <!-- https://learn.microsoft.com/nuget/consume-packages/central-package-management -->
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageVersion Include="Aspire.Hosting" Version="9.5.2" />
+        <PackageVersion Include="Aspire.Hosting.AppHost" Version="9.5.2" />
+        <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
+    </ItemGroup>
+</Project>
