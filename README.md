@@ -34,23 +34,6 @@ var rustfs = builder.AddRustFs("rustfs")
 builder.Build().Run();
 ```
 
-## Building from Source
-
-```bash
-# Clone the repository
-git clone https://github.com/konnta0/Aspire.Extensions.git
-cd Aspire.Extensions
-
-# Restore dependencies
-dotnet restore
-
-# Build
-dotnet build
-
-# Run tests
-dotnet test
-```
-
 ## License
 
 This project is licensed under the MIT License.
