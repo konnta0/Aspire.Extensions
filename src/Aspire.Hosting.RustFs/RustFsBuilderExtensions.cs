@@ -36,7 +36,7 @@ public static class RustFsBuilderExtensions
                                  ParameterResourceBuilderExtensions.CreateDefaultPasswordParameter(builder, $"{name}-secretKey");
 
         var resource = new RustFsResource(name, accessKeyParameter, secretKeyParameter);
-        
+
         var b = builder.AddResource(resource)
             .WithImage("rustfs/rustfs")
             .WithImageRegistry("docker.io")
@@ -58,7 +58,7 @@ public static class RustFsBuilderExtensions
             .WithEnvironment("RUSTFS_ACCESS_KEY", resource.AccessKey)
             .WithEnvironment("RUSTFS_SECRET_KEY", resource.SecretKey)
             .WithHttpHealthCheck("/health", 200, RustFsResource.PrimaryEndpointName);
-        
+
         return b;
     }
 
@@ -104,7 +104,7 @@ public static class RustFsBuilderExtensions
         {
             throw new ArgumentException("Bucket names cannot be null or empty.", nameof(bucketNames));
         }
-        
+
         return builder.AddBucket(
             name: $"{builder.Resource.Name}-create-buckets-{bucketNames[0]}",
             bucketNames: bucketNames
