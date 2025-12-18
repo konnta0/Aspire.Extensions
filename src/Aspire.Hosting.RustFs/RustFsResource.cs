@@ -23,7 +23,13 @@ public sealed class RustFsResource(string name, ParameterResource accessKey, Par
     internal const int PrimaryTargetPort = 9000;
     internal const int ConsoleTargetPort = 9001;
 
-    internal ParameterResource AccessKey { get; } = accessKey;
+    /// <summary>
+    /// Gets the access key parameter resource for RustFs.
+    /// </summary>
+    public ParameterResource AccessKey { get; } = accessKey;
 
-    internal ParameterResource SecretKey { get; } = secretKey;
+    /// <summary>
+    /// Gets the secret key parameter resource for RustFs.
+    /// </summary>
+    public ParameterResource SecretKey { get; } = secretKey;
 }
